@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import Markdown from "./Markdown";
+import './index.scss';
 
-import("./pkg").then(daemon_ui => {
-  let evnt = daemon_ui.get_event();
-  ReactDOM.render(<App evnt={evnt} />, document.getElementById('root'));
+import("../pkg").then(_d => {
+  console.log(_d);
+  ReactDOM.render(<Markdown text={"## WTF [i](/lol)"} _d={_d} />,
+                  document.getElementById('homePage'));
+
 });
