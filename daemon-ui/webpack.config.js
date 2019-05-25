@@ -1,6 +1,5 @@
 const path = require("path");
 
-const crate = path.resolve(__dirname, "crate");
 const src = path.resolve(__dirname, "src");
 const dist = path.resolve(__dirname, "dist");
 
@@ -44,7 +43,7 @@ module.exports = {
     }),
 
     new WasmPackPlugin({
-      crateDirectory: crate,
+      crateDirectory: __dirname,
       // TODO
       forceMode: 'release'
     }),
