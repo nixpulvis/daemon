@@ -1,11 +1,41 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title>My awesome Rust, WebAssembly, and Webpack application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>nixpulvis - {{ page.title | default: page.path | split:'/' | last }}</title>
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
   </head>
-  <body>
-    <div id="root"></div>
+
+  <body class="container">
+    <header>
+      <img id="lambda" src="/img/cat-lambda.png" />
+      <img id="me" src="/img/me.jpg" class="hidden" />
+      <a href="/" class="identity">nixpulvis</a>
+      <nav>
+        <ul>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/ramblings">Ramblings</a></li>
+          <li class="icon"><a href="/math">Σ</a></li>
+          <li class="icon"><a href="/musings">♪</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <Markdown id="homePage" text="something" />
+    </div>
+
+    <footer>
+      <a href="https://en.wikipedia.org/wiki/Copyright_notice">©</a>
+      Nathan Lilienthal, 2018
+      <span style="float:right;">
+        You <span class="nintendo">start</span> where you <kbd>⏎</kbd>
+      </span>
+    </footer>
   </body>
 </html>
-

@@ -3,6 +3,6 @@ target/
 
 daemon-ui/dist/
 daemon-ui/node_modules/
-daemon-ui/crate/pkg/
+daemon-ui/pkg/
 
 

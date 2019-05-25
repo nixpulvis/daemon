@@ -1,0 +1,216 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Computer Modern Serif", serif;
+  font-size: 18px;
+  color: #282c34;
+}
+
+pre {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: "Computer Modern Typewriter", monospace;
+}
+
+blockquote {
+  background: #eee;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 5px 10px;
+}
+
+details {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px dashed black;
+  border-radius: 5px;
+}
+
+details :last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed black;
+}
+
+kbd {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px 4px 0px;
+  box-shadow: 1px 1px 1px #777;
+  font-size: calc(100% - 6px);
+  vertical-align: middle;
+  background: #eee;
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.nintendo {
+  font-family: "Pixel";
+  letter-spacing: 0px;
+  font-variant: caps;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen
+and (max-device-width : 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.identity {
+  font-size: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#me {
+  position: absolute;
+  right: 80px;
+}
+
+header {
+  padding: 10px 0;
+  border-bottom: 1px dashed black;
+}
+
+header img {
+  height: 60px;
+  margin-top: 5px;
+  float: right;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-top: 1px dashed black;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+h2 small {
+  display: block;
+  font-size: 16px;
+}
+
+h1 a,
+h1 a:link,
+h1 a:active,
+h1 a:visited
+h2 a,
+h2 a:link,
+h2 a:active,
+h2 a:visited
+h3 a,
+h3 a:link,
+h3 a:active,
+h3 a:visited
+h4 a,
+h4 a:link,
+h4 a:active,
+h4 a:visited
+h5 a,
+h5 a:link,
+h5 a:active,
+h5 a:visited,
+h6 a,
+h6 a:link,
+h6 a:active,
+h6 a:visited
+{
+  color: #282c34 !important;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+nav .icon a {
+  text-decoration: none;
+}
+
+/* Rambling and Project Styles */
+
+li.draft {
+  opacity: 0.25;
+}
+
+/* Project Styles */
+
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects li.project {
+  margin-bottom: 20px;
+}
+
+.project a.name {
+  text-decoration: none;
+}
+
+.references {
+  background: #eee;
+  border: 1px dashed black;
+  border-radius: 5px;
+  font-size: 14px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.references li:before {
+  content: '- ';
+}
