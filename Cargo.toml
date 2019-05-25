@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "daemon-core",
+    "daemon-cli",
+    "daemon-server",
+    "daemon-ui/crate",
+]
