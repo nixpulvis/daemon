@@ -1,6 +1,6 @@
 {
   "author": "Nathan Lilienthal <nathan@nixpulvis.com>",
-  "name": "daemon",
+  "name": "daemon-ui",
   "version": "0.0.1",
   "repository": "https://github.com/nixpulvis/daemon",
   "license": "Apache-2.0",
