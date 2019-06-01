@@ -1,1 +1,1 @@
-web: daemon-server/target/release/daemon-server
+web: target/release/daemon-server
