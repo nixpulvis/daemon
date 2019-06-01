@@ -21,7 +21,7 @@ pub fn say_hello(state: State) -> (State, &'static str) {
 /// Start a server and call the `Handler` we've defined above for each `Request` we receive.
 pub fn main() {
     let port = env::var("PORT").expect("$PORT must be set");
-    let addr = format!("127.0.0.1:{}", port);
+    let addr = format!("0.0.0.0:{}", port);
     println!("Listening for requests at http://{}", addr);
     gotham::start(addr, || Ok(say_hello))
 }
