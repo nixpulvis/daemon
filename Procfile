@@ -1,1 +1,1 @@
-web: cargo run -p daemon-server
+web: daemon-server/target/release/daemon-server
